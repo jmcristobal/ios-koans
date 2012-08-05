@@ -1,5 +1,5 @@
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface AboutArraysTests : NSObject
+@interface AboutArraysTests : SenTestCase
 
 @end
