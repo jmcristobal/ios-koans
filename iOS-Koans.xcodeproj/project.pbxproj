@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A515CEB503005EC730 /* UIKit.framework */; };
+		44F150A815CEB503005EC730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A715CEB503005EC730 /* Foundation.framework */; };
+		44F150AA15CEB503005EC730 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A915CEB503005EC730 /* CoreGraphics.framework */; };
+		44F150B015CEB503005EC730 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44F150AE15CEB503005EC730 /* InfoPlist.strings */; };
+		44F150B215CEB503005EC730 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150B115CEB503005EC730 /* main.m */; };
+		44F150B615CEB503005EC730 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150B515CEB503005EC730 /* AppDelegate.m */; };
+		44F150B915CEB503005EC730 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150B815CEB503005EC730 /* ViewController.m */; };
+		44F150BC15CEB503005EC730 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F150BA15CEB503005EC730 /* ViewController_iPhone.xib */; };
+		44F150BF15CEB503005EC730 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F150BD15CEB503005EC730 /* ViewController_iPad.xib */; };
+		44F150C715CEB503005EC730 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150C615CEB503005EC730 /* SenTestingKit.framework */; };
+		44F150C815CEB503005EC730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A515CEB503005EC730 /* UIKit.framework */; };
+		44F150C915CEB503005EC730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A715CEB503005EC730 /* Foundation.framework */; };
+		44F150D115CEB503005EC730 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44F150CF15CEB503005EC730 /* InfoPlist.strings */; };
+		44F150E215CEB576005EC730 /* AboutNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150E115CEB576005EC730 /* AboutNumbersTests.m */; };
+		44F150E815CEB5A6005EC730 /* AboutBooleansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150E715CEB5A6005EC730 /* AboutBooleansTests.m */; };
+		44F150EE15CEB5DD005EC730 /* AboutStringsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */; };
+		44F150F415CEB5FE005EC730 /* AboutArraysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150F315CEB5FE005EC730 /* AboutArraysTests.m */; };
+		44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */; };
+		44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */; };
+		44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510515CEB71A005EC730 /* AboutLocationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44F150CA15CEB503005EC730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F1509815CEB503005EC730 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F150A015CEB503005EC730;
+			remoteInfo = "iOS-Koans";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44F150A115CEB503005EC730 /* iOS-Koans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Koans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F150A515CEB503005EC730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44F150A715CEB503005EC730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44F150A915CEB503005EC730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44F150AD15CEB503005EC730 /* iOS-Koans-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Koans-Info.plist"; sourceTree = "<group>"; };
+		44F150AF15CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44F150B115CEB503005EC730 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44F150B315CEB503005EC730 /* iOS-Koans-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Koans-Prefix.pch"; sourceTree = "<group>"; };
+		44F150B415CEB503005EC730 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44F150B515CEB503005EC730 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44F150B715CEB503005EC730 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44F150B815CEB503005EC730 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44F150BB15CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPhone.xib; path = ../en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		44F150BE15CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPad.xib; path = ../en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		44F150C515CEB503005EC730 /* iOS-KoansTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-KoansTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F150C615CEB503005EC730 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		44F150CE15CEB503005EC730 /* iOS-KoansTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-KoansTests-Info.plist"; sourceTree = "<group>"; };
+		44F150D015CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44F150E015CEB576005EC730 /* AboutNumbersTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutNumbersTests.h; sourceTree = "<group>"; };
+		44F150E115CEB576005EC730 /* AboutNumbersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutNumbersTests.m; sourceTree = "<group>"; };
+		44F150E615CEB5A6005EC730 /* AboutBooleansTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutBooleansTests.h; sourceTree = "<group>"; };
+		44F150E715CEB5A6005EC730 /* AboutBooleansTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutBooleansTests.m; sourceTree = "<group>"; };
+		44F150EC15CEB5DD005EC730 /* AboutStringsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutStringsTests.h; sourceTree = "<group>"; };
+		44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutStringsTests.m; sourceTree = "<group>"; };
+		44F150F215CEB5FE005EC730 /* AboutArraysTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutArraysTests.h; sourceTree = "<group>"; };
+		44F150F315CEB5FE005EC730 /* AboutArraysTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutArraysTests.m; sourceTree = "<group>"; };
+		44F150F815CEB69B005EC730 /* AboutDictionariesTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDictionariesTests.h; sourceTree = "<group>"; };
+		44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDictionariesTests.m; sourceTree = "<group>"; };
+		44F150FE15CEB6F8005EC730 /* AboutPointersTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPointersTests.h; sourceTree = "<group>"; };
+		44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPointersTests.m; sourceTree = "<group>"; };
+		44F1510415CEB71A005EC730 /* AboutLocationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLocationTests.h; sourceTree = "<group>"; };
+		44F1510515CEB71A005EC730 /* AboutLocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLocationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F1509E15CEB503005EC730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */,
+				44F150A815CEB503005EC730 /* Foundation.framework in Frameworks */,
+				44F150AA15CEB503005EC730 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F150C115CEB503005EC730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150C715CEB503005EC730 /* SenTestingKit.framework in Frameworks */,
+				44F150C815CEB503005EC730 /* UIKit.framework in Frameworks */,
+				44F150C915CEB503005EC730 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F1509615CEB503005EC730 = {
+			isa = PBXGroup;
+			children = (
+				44F150AB15CEB503005EC730 /* iOS-Koans */,
+				44F150CC15CEB503005EC730 /* iOS-KoansTests */,
+				44F150A415CEB503005EC730 /* Frameworks */,
+				44F150A215CEB503005EC730 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44F150A215CEB503005EC730 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F150A115CEB503005EC730 /* iOS-Koans.app */,
+				44F150C515CEB503005EC730 /* iOS-KoansTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F150A415CEB503005EC730 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F150A515CEB503005EC730 /* UIKit.framework */,
+				44F150A715CEB503005EC730 /* Foundation.framework */,
+				44F150A915CEB503005EC730 /* CoreGraphics.framework */,
+				44F150C615CEB503005EC730 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44F150AB15CEB503005EC730 /* iOS-Koans */ = {
+			isa = PBXGroup;
+			children = (
+				44F150AC15CEB503005EC730 /* Supporting Files */,
+				44F1510615CEB71A005EC731 /* Views */,
+				44F1510615CEB71A005EC732 /* ViewControllers */,
+				44F1510615CEB71A005EC734 /* AppDelegate */,
+			);
+			path = "iOS-Koans";
+			sourceTree = "<group>";
+		};
+		44F150AC15CEB503005EC730 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44F150AD15CEB503005EC730 /* iOS-Koans-Info.plist */,
+				44F150AE15CEB503005EC730 /* InfoPlist.strings */,
+				44F150B115CEB503005EC730 /* main.m */,
+				44F150B315CEB503005EC730 /* iOS-Koans-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44F150CC15CEB503005EC730 /* iOS-KoansTests */ = {
+			isa = PBXGroup;
+			children = (
+				44F150CD15CEB503005EC730 /* Supporting Files */,
+				44F1510615CEB71A005EC735 /* Subjects */,
+			);
+			path = "iOS-KoansTests";
+			sourceTree = "<group>";
+		};
+		44F150CD15CEB503005EC730 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44F150CE15CEB503005EC730 /* iOS-KoansTests-Info.plist */,
+				44F150CF15CEB503005EC730 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44F1510615CEB71A005EC731 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44F150BA15CEB503005EC730 /* ViewController_iPhone.xib */,
+				44F150BD15CEB503005EC730 /* ViewController_iPad.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44F1510615CEB71A005EC732 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				44F150B815CEB503005EC730 /* ViewController.m */,
+				44F150B715CEB503005EC730 /* ViewController.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		44F1510615CEB71A005EC734 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				44F150B515CEB503005EC730 /* AppDelegate.m */,
+				44F150B415CEB503005EC730 /* AppDelegate.h */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		44F1510615CEB71A005EC735 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */,
+				44F150EC15CEB5DD005EC730 /* AboutStringsTests.h */,
+				44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */,
+				44F150FE15CEB6F8005EC730 /* AboutPointersTests.h */,
+				44F150E115CEB576005EC730 /* AboutNumbersTests.m */,
+				44F150E015CEB576005EC730 /* AboutNumbersTests.h */,
+				44F1510515CEB71A005EC730 /* AboutLocationTests.m */,
+				44F1510415CEB71A005EC730 /* AboutLocationTests.h */,
+				44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */,
+				44F150F815CEB69B005EC730 /* AboutDictionariesTests.h */,
+				44F150E715CEB5A6005EC730 /* AboutBooleansTests.m */,
+				44F150E615CEB5A6005EC730 /* AboutBooleansTests.h */,
+				44F150F315CEB5FE005EC730 /* AboutArraysTests.m */,
+				44F150F215CEB5FE005EC730 /* AboutArraysTests.h */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F150A015CEB503005EC730 /* iOS-Koans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F150D715CEB503005EC730 /* Build configuration list for PBXNativeTarget "iOS-Koans" */;
+			buildPhases = (
+				44F1509D15CEB503005EC730 /* Sources */,
+				44F1509E15CEB503005EC730 /* Frameworks */,
+				44F1509F15CEB503005EC730 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Koans";
+			productName = "iOS-Koans";
+			productReference = 44F150A115CEB503005EC730 /* iOS-Koans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44F150C415CEB503005EC730 /* iOS-KoansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F150DA15CEB503005EC730 /* Build configuration list for PBXNativeTarget "iOS-KoansTests" */;
+			buildPhases = (
+				44F150C015CEB503005EC730 /* Sources */,
+				44F150C115CEB503005EC730 /* Frameworks */,
+				44F150C215CEB503005EC730 /* Resources */,
+				44F150C315CEB503005EC730 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F150CB15CEB503005EC730 /* PBXTargetDependency */,
+			);
+			name = "iOS-KoansTests";
+			productName = "iOS-KoansTests";
+			productReference = 44F150C515CEB503005EC730 /* iOS-KoansTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F1509815CEB503005EC730 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Toran Billups";
+			};
+			buildConfigurationList = 44F1509B15CEB503005EC730 /* Build configuration list for PBXProject "iOS-Koans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44F1509615CEB503005EC730;
+			productRefGroup = 44F150A215CEB503005EC730 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F150A015CEB503005EC730 /* iOS-Koans */,
+				44F150C415CEB503005EC730 /* iOS-KoansTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F1509F15CEB503005EC730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150B015CEB503005EC730 /* InfoPlist.strings in Resources */,
+				44F150BC15CEB503005EC730 /* ViewController_iPhone.xib in Resources */,
+				44F150BF15CEB503005EC730 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F150C215CEB503005EC730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150D115CEB503005EC730 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44F150C315CEB503005EC730 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F1509D15CEB503005EC730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150B215CEB503005EC730 /* main.m in Sources */,
+				44F150B615CEB503005EC730 /* AppDelegate.m in Sources */,
+				44F150B915CEB503005EC730 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F150C015CEB503005EC730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F150E215CEB576005EC730 /* AboutNumbersTests.m in Sources */,
+				44F150E815CEB5A6005EC730 /* AboutBooleansTests.m in Sources */,
+				44F150EE15CEB5DD005EC730 /* AboutStringsTests.m in Sources */,
+				44F150F415CEB5FE005EC730 /* AboutArraysTests.m in Sources */,
+				44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */,
+				44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */,
+				44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F150CB15CEB503005EC730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F150A015CEB503005EC730 /* iOS-Koans */;
+			targetProxy = 44F150CA15CEB503005EC730 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44F150AE15CEB503005EC730 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F150AF15CEB503005EC730 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44F150BA15CEB503005EC730 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F150BB15CEB503005EC730 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		44F150BD15CEB503005EC730 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F150BE15CEB503005EC730 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		44F150CF15CEB503005EC730 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F150D015CEB503005EC730 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44F150D515CEB503005EC730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44F150D615CEB503005EC730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F150D815CEB503005EC730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
+				INFOPLIST_FILE = "iOS-Koans/iOS-Koans-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44F150D915CEB503005EC730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
+				INFOPLIST_FILE = "iOS-Koans/iOS-Koans-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		44F150DB15CEB503005EC730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-Koans.app/iOS-Koans";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
+				INFOPLIST_FILE = "iOS-KoansTests/iOS-KoansTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		44F150DC15CEB503005EC730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOS-Koans.app/iOS-Koans";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
+				INFOPLIST_FILE = "iOS-KoansTests/iOS-KoansTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F1509B15CEB503005EC730 /* Build configuration list for PBXProject "iOS-Koans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F150D515CEB503005EC730 /* Debug */,
+				44F150D615CEB503005EC730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F150D715CEB503005EC730 /* Build configuration list for PBXNativeTarget "iOS-Koans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F150D815CEB503005EC730 /* Debug */,
+				44F150D915CEB503005EC730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44F150DA15CEB503005EC730 /* Build configuration list for PBXNativeTarget "iOS-KoansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F150DB15CEB503005EC730 /* Debug */,
+				44F150DC15CEB503005EC730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F1509815CEB503005EC730 /* Project object */;
+}
