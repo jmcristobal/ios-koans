@@ -1,5 +1,10 @@
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface AboutLocationTests : NSObject
+@class GetLocationService;
+
+@interface AboutLocationTests : SenTestCase
+
+@property (strong, nonatomic) GetLocationService* sut;
+@property (strong, nonatomic) id mockCLLocationManager;
 
 @end

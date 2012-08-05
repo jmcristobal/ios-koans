@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4404976D15CEF748001FA59D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4404976C15CEF748001FA59D /* CoreLocation.framework */; };
+		4404976F15CEF750001FA59D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4404976C15CEF748001FA59D /* CoreLocation.framework */; };
+		4404977B15CEFA1D001FA59D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4404977A15CEFA1D001FA59D /* libOCMock.a */; };
 		44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A515CEB503005EC730 /* UIKit.framework */; };
 		44F150A815CEB503005EC730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A715CEB503005EC730 /* Foundation.framework */; };
 		44F150AA15CEB503005EC730 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A915CEB503005EC730 /* CoreGraphics.framework */; };
@@ -30,6 +33,8 @@
 		44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC736 /* AboutLoopsTests.m */; };
 		44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */; };
 		44F1510615CEB71A005EC73F /* JsonResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73E /* JsonResult.m */; };
+		44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC741 /* GetLocationService.m */; };
+		44F1510615CEB71A005EC745 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC744 /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4404976C15CEF748001FA59D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4404977315CEFA1D001FA59D /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		4404977415CEFA1D001FA59D /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		4404977515CEFA1D001FA59D /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		4404977615CEFA1D001FA59D /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		4404977715CEFA1D001FA59D /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		4404977815CEFA1D001FA59D /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		4404977A15CEFA1D001FA59D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		44F150A115CEB503005EC730 /* iOS-Koans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Koans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F150A515CEB503005EC730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44F150A715CEB503005EC730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,8 +68,8 @@
 		44F150B515CEB503005EC730 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		44F150B715CEB503005EC730 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44F150B815CEB503005EC730 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		44F150BB15CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPhone.xib; path = ../en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		44F150BE15CEB503005EC730 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPad.xib; path = ../en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		44F150BB15CEB503005EC730 /* ViewController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPhone.xib; path = ../en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		44F150BE15CEB503005EC730 /* ViewController_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ViewController_iPad.xib; path = ../en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		44F150C515CEB503005EC730 /* iOS-KoansTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-KoansTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F150C615CEB503005EC730 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		44F150CE15CEB503005EC730 /* iOS-KoansTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-KoansTests-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +94,10 @@
 		44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutParsingJsonTests.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC73E /* JsonResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonResult.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC740 /* JsonResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonResult.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC741 /* GetLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocationService.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC743 /* GetLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocationService.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC744 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC746 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4404976D15CEF748001FA59D /* CoreLocation.framework in Frameworks */,
 				44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */,
 				44F150A815CEB503005EC730 /* Foundation.framework in Frameworks */,
 				44F150AA15CEB503005EC730 /* CoreGraphics.framework in Frameworks */,
@@ -98,18 +116,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4404976F15CEF750001FA59D /* CoreLocation.framework in Frameworks */,
 				44F150C715CEB503005EC730 /* SenTestingKit.framework in Frameworks */,
 				44F150C815CEB503005EC730 /* UIKit.framework in Frameworks */,
 				44F150C915CEB503005EC730 /* Foundation.framework in Frameworks */,
+				4404977B15CEFA1D001FA59D /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4404977015CEFA1D001FA59D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4404977115CEFA1D001FA59D /* include */,
+				4404977915CEFA1D001FA59D /* lib */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4404977115CEFA1D001FA59D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4404977215CEFA1D001FA59D /* OCMock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4404977215CEFA1D001FA59D /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				4404977315CEFA1D001FA59D /* NSNotificationCenter+OCMAdditions.h */,
+				4404977415CEFA1D001FA59D /* OCMArg.h */,
+				4404977515CEFA1D001FA59D /* OCMConstraint.h */,
+				4404977615CEFA1D001FA59D /* OCMock.h */,
+				4404977715CEFA1D001FA59D /* OCMockObject.h */,
+				4404977815CEFA1D001FA59D /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		4404977915CEFA1D001FA59D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4404977A15CEFA1D001FA59D /* libOCMock.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		44F1509615CEB503005EC730 = {
 			isa = PBXGroup;
 			children = (
+				4404977015CEFA1D001FA59D /* Libraries */,
 				44F150AB15CEB503005EC730 /* iOS-Koans */,
 				44F150CC15CEB503005EC730 /* iOS-KoansTests */,
 				44F150A415CEB503005EC730 /* Frameworks */,
@@ -129,6 +188,7 @@
 		44F150A415CEB503005EC730 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4404976C15CEF748001FA59D /* CoreLocation.framework */,
 				44F150A515CEB503005EC730 /* UIKit.framework */,
 				44F150A715CEB503005EC730 /* Foundation.framework */,
 				44F150A915CEB503005EC730 /* CoreGraphics.framework */,
@@ -233,6 +293,10 @@
 		44F1510615CEB71A005EC73D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC746 /* Location.h */,
+				44F1510615CEB71A005EC744 /* Location.m */,
+				44F1510615CEB71A005EC743 /* GetLocationService.h */,
+				44F1510615CEB71A005EC741 /* GetLocationService.m */,
 				44F1510615CEB71A005EC740 /* JsonResult.h */,
 				44F1510615CEB71A005EC73E /* JsonResult.m */,
 			);
@@ -351,6 +415,8 @@
 				44F150B615CEB503005EC730 /* AppDelegate.m in Sources */,
 				44F150B915CEB503005EC730 /* ViewController.m in Sources */,
 				44F1510615CEB71A005EC73F /* JsonResult.m in Sources */,
+				44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */,
+				44F1510615CEB71A005EC745 /* Location.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +458,7 @@
 		44F150BA15CEB503005EC730 /* ViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				44F150BB15CEB503005EC730 /* en */,
+				44F150BB15CEB503005EC730 /* ViewController_iPhone.xib */,
 			);
 			name = ViewController_iPhone.xib;
 			sourceTree = "<group>";
@@ -400,7 +466,7 @@
 		44F150BD15CEB503005EC730 /* ViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				44F150BE15CEB503005EC730 /* en */,
+				44F150BE15CEB503005EC730 /* ViewController_iPad.xib */,
 			);
 			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
@@ -500,8 +566,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
 				INFOPLIST_FILE = "iOS-KoansTests/iOS-KoansTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/lib\"",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-force_load",
+					"\"$(SRCROOT)/Libraries/lib/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"$(SRCROOT)/usr/include\"";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -517,6 +593,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Koans/iOS-Koans-Prefix.pch";
 				INFOPLIST_FILE = "iOS-KoansTests/iOS-KoansTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libraries/lib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -542,6 +622,7 @@
 				44F150D915CEB503005EC730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F150DA15CEB503005EC730 /* Build configuration list for PBXNativeTarget "iOS-KoansTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +631,7 @@
 				44F150DC15CEB503005EC730 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
