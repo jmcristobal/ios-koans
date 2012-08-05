@@ -28,6 +28,8 @@
 		44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */; };
 		44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510515CEB71A005EC730 /* AboutLocationTests.m */; };
 		44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC736 /* AboutLoopsTests.m */; };
+		44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */; };
+		44F1510615CEB71A005EC73F /* JsonResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73E /* JsonResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		44F1510515CEB71A005EC730 /* AboutLocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLocationTests.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC736 /* AboutLoopsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLoopsTests.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC738 /* AboutLoopsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLoopsTests.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutParsingJsonTests.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutParsingJsonTests.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC73E /* JsonResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonResult.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC740 /* JsonResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonResult.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 				44F1510615CEB71A005EC731 /* Views */,
 				44F1510615CEB71A005EC732 /* ViewControllers */,
 				44F1510615CEB71A005EC734 /* AppDelegate */,
+				44F1510615CEB71A005EC73D /* Models */,
 			);
 			path = "iOS-Koans";
 			sourceTree = "<group>";
@@ -201,6 +208,8 @@
 		44F1510615CEB71A005EC735 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */,
+				44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */,
 				44F1510615CEB71A005EC738 /* AboutLoopsTests.h */,
 				44F1510615CEB71A005EC736 /* AboutLoopsTests.m */,
 				44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */,
@@ -219,6 +228,15 @@
 				44F150F215CEB5FE005EC730 /* AboutArraysTests.h */,
 			);
 			path = Subjects;
+			sourceTree = "<group>";
+		};
+		44F1510615CEB71A005EC73D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44F1510615CEB71A005EC740 /* JsonResult.h */,
+				44F1510615CEB71A005EC73E /* JsonResult.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +350,7 @@
 				44F150B215CEB503005EC730 /* main.m in Sources */,
 				44F150B615CEB503005EC730 /* AppDelegate.m in Sources */,
 				44F150B915CEB503005EC730 /* ViewController.m in Sources */,
+				44F1510615CEB71A005EC73F /* JsonResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +366,7 @@
 				44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */,
 				44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */,
 				44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */,
+				44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
