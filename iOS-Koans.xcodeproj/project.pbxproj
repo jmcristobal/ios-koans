@@ -35,6 +35,7 @@
 		44F1510615CEB71A005EC73F /* JsonResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73E /* JsonResult.m */; };
 		44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC741 /* GetLocationService.m */; };
 		44F1510615CEB71A005EC745 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC744 /* Location.m */; };
+		44F1510615CEB71A005EC748 /* AboutSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC747 /* AboutSwitchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		44F1510615CEB71A005EC743 /* GetLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLocationService.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC744 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC746 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC747 /* AboutSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSwitchTests.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC749 /* AboutSwitchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSwitchTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 		44F1510615CEB71A005EC735 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC749 /* AboutSwitchTests.h */,
+				44F1510615CEB71A005EC747 /* AboutSwitchTests.m */,
 				44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */,
 				44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */,
 				44F1510615CEB71A005EC738 /* AboutLoopsTests.h */,
@@ -433,6 +438,7 @@
 				44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */,
 				44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */,
 				44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */,
+				44F1510615CEB71A005EC748 /* AboutSwitchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
