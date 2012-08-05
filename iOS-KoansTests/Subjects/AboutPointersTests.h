@@ -1,5 +1,5 @@
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface AboutPointersTests : NSObject
+@interface AboutPointersTests : SenTestCase
 
 @end
