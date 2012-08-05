@@ -1,5 +1,5 @@
-#import <Foundation/Foundation.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface AboutBooleansTests : NSObject
+@interface AboutBooleansTests : SenTestCase
 
 @end
