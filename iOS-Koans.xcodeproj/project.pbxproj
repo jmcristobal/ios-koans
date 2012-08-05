@@ -27,6 +27,7 @@
 		44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */; };
 		44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */; };
 		44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510515CEB71A005EC730 /* AboutLocationTests.m */; };
+		44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC736 /* AboutLoopsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPointersTests.m; sourceTree = "<group>"; };
 		44F1510415CEB71A005EC730 /* AboutLocationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLocationTests.h; sourceTree = "<group>"; };
 		44F1510515CEB71A005EC730 /* AboutLocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLocationTests.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC736 /* AboutLoopsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLoopsTests.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC738 /* AboutLoopsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLoopsTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 		44F1510615CEB71A005EC735 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC738 /* AboutLoopsTests.h */,
+				44F1510615CEB71A005EC736 /* AboutLoopsTests.m */,
 				44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */,
 				44F150EC15CEB5DD005EC730 /* AboutStringsTests.h */,
 				44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */,
@@ -341,6 +346,7 @@
 				44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */,
 				44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */,
 				44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */,
+				44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
