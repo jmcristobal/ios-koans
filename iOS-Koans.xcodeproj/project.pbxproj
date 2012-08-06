@@ -36,6 +36,10 @@
 		44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC741 /* GetLocationService.m */; };
 		44F1510615CEB71A005EC745 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC744 /* Location.m */; };
 		44F1510615CEB71A005EC748 /* AboutSwitchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC747 /* AboutSwitchTests.m */; };
+		44F1510615CEB71A005EC74B /* AboutBlocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC74A /* AboutBlocksTests.m */; };
+		44F1510615CEB71A005EC74E /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC74D /* WebService.m */; };
+		44F1510615CEB71A005EC751 /* LegacyWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC750 /* LegacyWebService.m */; };
+		44F1510615CEB71A005EC754 /* GoogleWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC753 /* GoogleWebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,14 @@
 		44F1510615CEB71A005EC746 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC747 /* AboutSwitchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSwitchTests.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC749 /* AboutSwitchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSwitchTests.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC74A /* AboutBlocksTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutBlocksTests.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC74C /* AboutBlocksTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutBlocksTests.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC74D /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC74F /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC750 /* LegacyWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegacyWebService.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC752 /* LegacyWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegacyWebService.h; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC753 /* GoogleWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleWebService.m; sourceTree = "<group>"; };
+		44F1510615CEB71A005EC755 /* GoogleWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleWebService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +283,8 @@
 		44F1510615CEB71A005EC735 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC74C /* AboutBlocksTests.h */,
+				44F1510615CEB71A005EC74A /* AboutBlocksTests.m */,
 				44F1510615CEB71A005EC749 /* AboutSwitchTests.h */,
 				44F1510615CEB71A005EC747 /* AboutSwitchTests.m */,
 				44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */,
@@ -298,6 +312,12 @@
 		44F1510615CEB71A005EC73D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				44F1510615CEB71A005EC755 /* GoogleWebService.h */,
+				44F1510615CEB71A005EC753 /* GoogleWebService.m */,
+				44F1510615CEB71A005EC752 /* LegacyWebService.h */,
+				44F1510615CEB71A005EC750 /* LegacyWebService.m */,
+				44F1510615CEB71A005EC74F /* WebService.h */,
+				44F1510615CEB71A005EC74D /* WebService.m */,
 				44F1510615CEB71A005EC746 /* Location.h */,
 				44F1510615CEB71A005EC744 /* Location.m */,
 				44F1510615CEB71A005EC743 /* GetLocationService.h */,
@@ -422,6 +442,9 @@
 				44F1510615CEB71A005EC73F /* JsonResult.m in Sources */,
 				44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */,
 				44F1510615CEB71A005EC745 /* Location.m in Sources */,
+				44F1510615CEB71A005EC74E /* WebService.m in Sources */,
+				44F1510615CEB71A005EC751 /* LegacyWebService.m in Sources */,
+				44F1510615CEB71A005EC754 /* GoogleWebService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +462,7 @@
 				44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */,
 				44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */,
 				44F1510615CEB71A005EC748 /* AboutSwitchTests.m in Sources */,
+				44F1510615CEB71A005EC74B /* AboutBlocksTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
