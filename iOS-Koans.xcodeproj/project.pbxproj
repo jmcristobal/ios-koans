@@ -12,6 +12,8 @@
 		4404977B15CEFA1D001FA59D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4404977A15CEFA1D001FA59D /* libOCMock.a */; };
 		4449F31D15D0AF99001FFFE1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4449F31C15D0AF99001FFFE1 /* libsqlite3.dylib */; };
 		4449F31F15D0AFAA001FFFE1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4449F31C15D0AF99001FFFE1 /* libsqlite3.dylib */; };
+		44849BB715D1FA0100463BC2 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44849BB615D1FA0100463BC2 /* AddressAnnotation.m */; };
+		44849BBA15D1FAA700463BC2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44849BB915D1FAA700463BC2 /* MapKit.framework */; };
 		44B4CF5615D0B1A4001924E2 /* koans.db in Resources */ = {isa = PBXBuildFile; fileRef = 44B4CF5515D0B1A4001924E2 /* koans.db */; };
 		44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A515CEB503005EC730 /* UIKit.framework */; };
 		44F150A815CEB503005EC730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F150A715CEB503005EC730 /* Foundation.framework */; };
@@ -70,6 +72,9 @@
 		4404977815CEFA1D001FA59D /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		4404977A15CEFA1D001FA59D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		4449F31C15D0AF99001FFFE1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		44849BB515D1FA0100463BC2 /* AddressAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		44849BB615D1FA0100463BC2 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
+		44849BB915D1FAA700463BC2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		44B4CF5515D0B1A4001924E2 /* koans.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = koans.db; sourceTree = "<group>"; };
 		44F150A115CEB503005EC730 /* iOS-Koans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Koans.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F150A515CEB503005EC730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -140,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44849BBA15D1FAA700463BC2 /* MapKit.framework in Frameworks */,
 				4449F31D15D0AF99001FFFE1 /* libsqlite3.dylib in Frameworks */,
 				4404976D15CEF748001FA59D /* CoreLocation.framework in Frameworks */,
 				44F150A615CEB503005EC730 /* UIKit.framework in Frameworks */,
@@ -226,6 +232,7 @@
 		44F150A415CEB503005EC730 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44849BB915D1FAA700463BC2 /* MapKit.framework */,
 				4449F31C15D0AF99001FFFE1 /* libsqlite3.dylib */,
 				4404976C15CEF748001FA59D /* CoreLocation.framework */,
 				44F150A515CEB503005EC730 /* UIKit.framework */,
@@ -358,6 +365,8 @@
 				44F1510615CEB71A005EC741 /* GetLocationService.m */,
 				44F1510615CEB71A005EC740 /* JsonResult.h */,
 				44F1510615CEB71A005EC73E /* JsonResult.m */,
+				44849BB515D1FA0100463BC2 /* AddressAnnotation.h */,
+				44849BB615D1FA0100463BC2 /* AddressAnnotation.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 				44F1510615CEB71A005EC757 /* MakePhoneCall.m in Sources */,
 				44F1510615CEB71A005EC75D /* BaseRepository.m in Sources */,
 				44F1510615CEB71A005EC760 /* UserRepository.m in Sources */,
+				44849BB715D1FA0100463BC2 /* AddressAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
