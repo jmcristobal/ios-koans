@@ -4,6 +4,24 @@
 
 @implementation AboutBlocksTests
 
+BOOL (^isInputEven)(int) = ^(int input)
+{
+    if (input % 2 == 0)
+        return YES;
+    else
+        return NO;
+};
+
+- (void)testTwoShouldReturnEven
+{
+    STAssertFalse(isInputEven(2), @"");
+}
+
+- (void)testOneShouldReturnOdd
+{
+    STAssertTrue(isInputEven(1), @"");
+}
+
 - (void)testShouldUseSubclassedWebServiceToHandleCallback
 {
     GoogleWebService *legacyWebService = [[GoogleWebService alloc] init];
