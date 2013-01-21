@@ -5,32 +5,32 @@
 - (void)testArrayCanBeCreatedWithSingleObject
 {
     NSArray *array = [NSArray arrayWithObject:@"foo"];
-    STAssertEqualObjects([array objectAtIndex:0], @"foo", @"");
+    STAssertEqualObjects([array objectAtIndex:0], @"x", @"");
 }
 
 - (void)testArrayCanBeCreatedWithMultipleObjects
 {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
-    STAssertEqualObjects([array objectAtIndex:0], @"foo", @"");
-    STAssertEqualObjects([array objectAtIndex:1], @"bar", @"");
+    STAssertEqualObjects([array objectAtIndex:0], @"x", @"");
+    STAssertEqualObjects([array objectAtIndex:1], @"x", @"");
 }
 
 - (void)testArrayHasCountProperty
 {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
-    STAssertEquals([array count], 2U, @"");
+    STAssertEquals([array count], 3U, @"");
 }
 
 - (void)testArrayHasLastObjectProperty
 {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
-    STAssertEqualObjects([array lastObject], @"bar", @"");
+    STAssertEqualObjects([array lastObject], @"x", @"");
 }
 
 - (void)testArrayContainsObject
 {
     NSArray *array = [NSArray arrayWithObjects:@"foo", @"bar", nil];
-	STAssertTrue([array containsObject:@"foo"], @"");
+	STAssertTrue([array containsObject:@"x"], @"");
 }
 
 @end
