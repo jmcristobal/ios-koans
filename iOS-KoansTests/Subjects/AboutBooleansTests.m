@@ -5,43 +5,43 @@
 - (void)testBooleanCanHaveTrueValue
 {
     BOOL foo = TRUE;
-    STAssertFalse(foo, @"");
+    STAssertTrue(foo, @"");
 }
 
 - (void)testBooleanCanHaveFalseValue
 {
     BOOL foo = FALSE;
-    STAssertTrue(foo, @"");
+    STAssertFalse(foo, @"");
 }
 
 - (void)testBooleanCanHaveYesValue
 {
     BOOL foo = YES;
-    STAssertFalse(foo, @"");
+    STAssertTrue(foo, @"");
 }
 
 - (void)testBooleanCanHaveNoValue
 {
     BOOL foo = NO;
-    STAssertTrue(foo, @"");
+    STAssertFalse(foo, @"");
 }
 
 - (void)testBooleanCanHaveOtherValue
 {
     BOOL foo = 92;
-    STAssertFalse(foo, @"");
+    STAssertTrue(foo, @"");
 }
 
 - (void)testBooleanWithZeroValueIsAlwaysFalse
 {
     BOOL foo = 0;
-    STAssertTrue(foo, @"");
+    STAssertFalse(foo, @"");
 }
 
 - (void)testBooleanWithNilValueIsAlwaysFalse
 {
     BOOL foo = nil;
-    STAssertTrue(foo, @"");
+    STAssertFalse(foo, @"");
 }
 
 @end
