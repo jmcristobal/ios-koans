@@ -5,31 +5,31 @@
 - (void)testSingleCharValueIsBasicString
 {
     char foo = 'a';
-    STAssertEquals(foo, (char)'x', @"");
+    STAssertEquals(foo, (char)'a', @"");
 }
 
 - (void)testSingleCharValueCanAlsoBeNumericRepresentationOfString
 {
     char foo = 97;
-    STAssertEquals(foo, (char)'x', @""); //hint maybe 'a' is 97...
+    STAssertEquals(foo, (char)'a', @""); //hint maybe 'a' is 97...
 }
 
 - (void)testCharCanAlsoBeRepresentedWithPointer
 {
     char *foo = "abc";
-    STAssertEquals(foo, (char *)"x", @"");
+    STAssertEquals(foo, (char *)"abc", @"");
 }
 
 - (void)testNSStringCanAlsoHaveCharValue
 {
     NSString *foo = @"abc";
-    STAssertEquals(foo, @"x", @"");
+    STAssertEquals(foo, @"abc", @"");
 }
 
 - (void)testNSStringCanBeCreatedWithSpecificFormat
 {
     NSString *foo = [NSString stringWithFormat:@"this is %d", 24];
-    STAssertEqualObjects(foo, @"x", @"");
+    STAssertEqualObjects(foo, @"this is 24", @"");
 }
 
 - (void)testNSStringIsImmutable
@@ -37,15 +37,15 @@
     //[foo appendString:@" 123"]; this will cause a compiler error ... so instead
     NSString *foo = @"abc";
     NSString *bar = [NSString stringWithFormat:@"foo was %@", foo];
-    STAssertEqualObjects(foo, @"x", @"");
-    STAssertEqualObjects(bar, @"x", @"");
+    STAssertEqualObjects(foo, @"abc", @"");
+    STAssertEqualObjects(bar, @"foo was abc", @"");
 }
 
 - (void)testNSMutableStringIsMutable
 {
     NSMutableString *foo = [[NSMutableString alloc] initWithString:@"abc"];
     [foo appendString:@" 123"];
-    STAssertEqualObjects(foo, @"x", @"");
+    STAssertEqualObjects(foo, @"abc 123", @"");
 }
 
 - (void)testNSStringAndNSRangeCanBeUsedToCreateSubstring
@@ -53,7 +53,7 @@
     NSString *foo = @"abc 123 def 456";
     NSRange range = [foo rangeOfString:@" def"];
     NSString *bar = [foo substringWithRange:NSMakeRange(0, range.location)];
-    STAssertEqualObjects(bar, @"x", @"");
+    STAssertEqualObjects(bar, @"abc 123", @"");
 }
 
 - (void)testNSStringAndNSRangeCanBeUsedToCreateSubstringWithCharsAfterElement
@@ -61,7 +61,7 @@
     NSString *foo = @"abc 123 def 456";
     NSRange range = [foo rangeOfString:@" def"];
     NSString *bar = [foo substringWithRange:NSMakeRange(range.location, foo.length - range.location)];
-    STAssertEqualObjects(bar, @"x", @"");
+    STAssertEqualObjects(bar, @" def 456", @"");
 }
 
 @end
