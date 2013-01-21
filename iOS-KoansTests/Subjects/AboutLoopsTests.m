@@ -10,7 +10,7 @@
     {
         firstMessage = [NSString stringWithFormat:@"item %d had object %@", i, [array objectAtIndex:i]];
     }
-    STAssertEqualObjects(firstMessage, @"item 0 had object WRONG!", @"");
+    STAssertEqualObjects(firstMessage, @"item 0 had object first", @"");
 }
 
 - (void)testBasicForLoopsAllowBreak
@@ -25,7 +25,7 @@
         lastMessage = @"got here?";
     }
     STAssertEqualObjects(firstMessage, @"got here?", @"");
-    STAssertEqualObjects(lastMessage, @"got here?", @"");
+    STAssertEqualObjects(lastMessage, nil, @"");
 }
 
 - (void)testEnumerateThroughArray
@@ -34,7 +34,7 @@
     NSEnumerator *enumerator = [array objectEnumerator];
     NSString *firstMessage;
     while((firstMessage = [enumerator nextObject])) {
-        STAssertEqualObjects(firstMessage, @"x", @"");
+        STAssertEqualObjects(firstMessage, @"first", @"");
     }
 }
 
@@ -42,7 +42,7 @@
 {
     NSArray *array = [NSArray arrayWithObjects:@"first", nil];
     for (NSString *str in array) {
-        STAssertEqualObjects(str, @"x", @"");
+        STAssertEqualObjects(str, @"first", @"");
     }
 }
 
@@ -54,7 +54,7 @@
     for(id key in dictionary)
     {
         id value = [dictionary objectForKey:key];
-        STAssertEqualObjects(value, @"x", @"");
+        STAssertEqualObjects(value, @"foo", @"");
     }
 }
 
