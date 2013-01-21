@@ -15,7 +15,7 @@
             result = YES;
             break;
     }
-    STAssertFalse(result, @"");
+    STAssertTrue(result, @"");
 }
 
 - (void)testReturnsFalseWhenValueMatchesFirstCondition
@@ -31,7 +31,7 @@
             result = YES;
             break;
     }
-    STAssertTrue(result, @"");
+    STAssertFalse(result, @"");
 }
 
 - (void)testReturnsTrueWhenValueMatchesNoneAndDefaultIsUsed
@@ -50,7 +50,7 @@
             result = YES;
             break;
     }
-    STAssertFalse(result, @"");
+    STAssertTrue(result, @"");
 }
 
 @end
