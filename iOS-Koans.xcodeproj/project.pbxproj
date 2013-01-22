@@ -34,9 +34,7 @@
 		44F150F415CEB5FE005EC730 /* AboutArraysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150F315CEB5FE005EC730 /* AboutArraysTests.m */; };
 		44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */; };
 		44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */; };
-		44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510515CEB71A005EC730 /* AboutLocationTests.m */; };
 		44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC736 /* AboutLoopsTests.m */; };
-		44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */; };
 		44F1510615CEB71A005EC73F /* JsonResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC73E /* JsonResult.m */; };
 		44F1510615CEB71A005EC742 /* GetLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC741 /* GetLocationService.m */; };
 		44F1510615CEB71A005EC745 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC744 /* Location.m */; };
@@ -46,10 +44,8 @@
 		44F1510615CEB71A005EC751 /* LegacyWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC750 /* LegacyWebService.m */; };
 		44F1510615CEB71A005EC754 /* GoogleWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC753 /* GoogleWebService.m */; };
 		44F1510615CEB71A005EC757 /* MakePhoneCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC756 /* MakePhoneCall.m */; };
-		44F1510615CEB71A005EC75A /* AboutPhoneCallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC759 /* AboutPhoneCallTests.m */; };
 		44F1510615CEB71A005EC75D /* BaseRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC75C /* BaseRepository.m */; };
 		44F1510615CEB71A005EC760 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC75F /* UserRepository.m */; };
-		44F1510615CEB71A005EC763 /* AboutSQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F1510615CEB71A005EC762 /* AboutSQLiteTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,12 +102,8 @@
 		44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDictionariesTests.m; sourceTree = "<group>"; };
 		44F150FE15CEB6F8005EC730 /* AboutPointersTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPointersTests.h; sourceTree = "<group>"; };
 		44F150FF15CEB6F8005EC730 /* AboutPointersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPointersTests.m; sourceTree = "<group>"; };
-		44F1510415CEB71A005EC730 /* AboutLocationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLocationTests.h; sourceTree = "<group>"; };
-		44F1510515CEB71A005EC730 /* AboutLocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLocationTests.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC736 /* AboutLoopsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutLoopsTests.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC738 /* AboutLoopsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutLoopsTests.h; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutParsingJsonTests.m; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutParsingJsonTests.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC73E /* JsonResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonResult.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC740 /* JsonResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonResult.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC741 /* GetLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLocationService.m; sourceTree = "<group>"; };
@@ -130,14 +122,10 @@
 		44F1510615CEB71A005EC755 /* GoogleWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleWebService.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC756 /* MakePhoneCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakePhoneCall.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC758 /* MakePhoneCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakePhoneCall.h; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC759 /* AboutPhoneCallTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPhoneCallTests.m; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC75B /* AboutPhoneCallTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPhoneCallTests.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC75C /* BaseRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRepository.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC75E /* BaseRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRepository.h; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC75F /* UserRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRepository.m; sourceTree = "<group>"; };
 		44F1510615CEB71A005EC761 /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepository.h; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC762 /* AboutSQLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSQLiteTests.m; sourceTree = "<group>"; };
-		44F1510615CEB71A005EC764 /* AboutSQLiteTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSQLiteTests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,16 +302,10 @@
 		44F1510615CEB71A005EC735 /* Subjects */ = {
 			isa = PBXGroup;
 			children = (
-				44F1510615CEB71A005EC764 /* AboutSQLiteTests.h */,
-				44F1510615CEB71A005EC762 /* AboutSQLiteTests.m */,
-				44F1510615CEB71A005EC75B /* AboutPhoneCallTests.h */,
-				44F1510615CEB71A005EC759 /* AboutPhoneCallTests.m */,
 				44F1510615CEB71A005EC74C /* AboutBlocksTests.h */,
 				44F1510615CEB71A005EC74A /* AboutBlocksTests.m */,
 				44F1510615CEB71A005EC749 /* AboutSwitchTests.h */,
 				44F1510615CEB71A005EC747 /* AboutSwitchTests.m */,
-				44F1510615CEB71A005EC73C /* AboutParsingJsonTests.h */,
-				44F1510615CEB71A005EC73A /* AboutParsingJsonTests.m */,
 				44F1510615CEB71A005EC738 /* AboutLoopsTests.h */,
 				44F1510615CEB71A005EC736 /* AboutLoopsTests.m */,
 				44F150ED15CEB5DD005EC730 /* AboutStringsTests.m */,
@@ -332,8 +314,6 @@
 				44F150FE15CEB6F8005EC730 /* AboutPointersTests.h */,
 				44F150E115CEB576005EC730 /* AboutNumbersTests.m */,
 				44F150E015CEB576005EC730 /* AboutNumbersTests.h */,
-				44F1510515CEB71A005EC730 /* AboutLocationTests.m */,
-				44F1510415CEB71A005EC730 /* AboutLocationTests.h */,
 				44F150F915CEB69B005EC730 /* AboutDictionariesTests.m */,
 				44F150F815CEB69B005EC730 /* AboutDictionariesTests.h */,
 				44F150E715CEB5A6005EC730 /* AboutBooleansTests.m */,
@@ -506,13 +486,9 @@
 				44F150F415CEB5FE005EC730 /* AboutArraysTests.m in Sources */,
 				44F150FA15CEB69B005EC730 /* AboutDictionariesTests.m in Sources */,
 				44F1510015CEB6F8005EC730 /* AboutPointersTests.m in Sources */,
-				44F1510615CEB71A005EC730 /* AboutLocationTests.m in Sources */,
 				44F1510615CEB71A005EC737 /* AboutLoopsTests.m in Sources */,
-				44F1510615CEB71A005EC73B /* AboutParsingJsonTests.m in Sources */,
 				44F1510615CEB71A005EC748 /* AboutSwitchTests.m in Sources */,
 				44F1510615CEB71A005EC74B /* AboutBlocksTests.m in Sources */,
-				44F1510615CEB71A005EC75A /* AboutPhoneCallTests.m in Sources */,
-				44F1510615CEB71A005EC763 /* AboutSQLiteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
